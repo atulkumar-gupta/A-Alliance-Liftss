@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@400;500;700&family=Lobster&family=Indie+Flower&family=Chelsea+Market&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+    <title>A Alliance Lifts - Export & Modification</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener('error', function(e) {
+        const el = document.getElementById('root-error');
+        if (el) {
+          el.style.display = 'block';
+          el.textContent = 'JS Error: ' + (e.message || e.type || 'Unknown error');
+        }
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        const el = document.getElementById('root-error');
+        if (el) {
+          el.style.display = 'block';
+          el.textContent = 'Unhandled Promise: ' + ((e.reason && e.reason.message) || 'Unknown error');
+        }
+      });
+    </script>
+    <div id="root-error" style="display:none;padding:20px;background:#ff000040;color:#000;font-weight:bold;position:fixed;top:0;left:0;right:0;z-index:99999;"></div>
+  </body>
+</html>

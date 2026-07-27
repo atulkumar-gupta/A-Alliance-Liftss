@@ -1,0 +1,62 @@
+/* ── section ── */
+.why-section {
+  padding: 80px 100px 40px;
+  background: #fff;
+}
+
+/* ── header ── */
+.why-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.why-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #E32127;
+  margin-bottom: 14px;
+  line-height: 1.2;
+  opacity: 0;
+}
+
+.whysub {
+  font-family: 'Sofia', cursive;
+  color: rgb(255, 106, 0);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+/* ── animate-left helper ── */
+.animate-left {
+  opacity: 0;
+  animation: slideInLeft 0.6s ease forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ── image — centred ── */
+.why-image-wrap {
+  max-width: 1500px;
+  margin: -40px auto 0;
+  background: #ddd;
+}
+
+.why-image {
+  width: 100%;
+  display: block;
+}
+
+/* ── mobile ── */
+@media (max-width: 768px) {
+  .why-section {
+    padding: 50px 20px 60px;
+  }
+
+  .why-title {
+    font-size: 30px;
+  }
+}

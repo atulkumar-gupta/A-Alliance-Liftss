@@ -1,0 +1,200 @@
+[
+  {
+    "id": "bottom-plengths",
+    "name": "Bottom Plengths",
+    "img": "/src/images/part1.png",
+    "description": "High-quality bottom plengths and top corona bars for elevator assembly.",
+    "features": [
+      "Durable construction for long service life",
+      "Stable mounting for smooth assembly",
+      "Designed for elevator component alignment",
+      "Used in assembly applications across models",
+      "High tensile strength for durability",
+      "Corrosion-resistant coating available"
+    ],
+    "specs": [
+      { "label": "Material", "value": "High-grade Steel" },
+      { "label": "Length", "value": "Customizable" },
+      { "label": "Diameter", "value": "Various sizes available" },
+      { "label": "Load Capacity", "value": "High" },
+      { "label": "Surface Treatment", "value": "Galvanized/Painted" },
+      { "label": "Application", "value": "Elevator Assembly" }
+    ]
+  },
+  {
+    "id": "full-vision-glass-doors",
+    "name": "Full Vision Glass Doors",
+    "img": "/src/images/part2.png",
+    "description": "Premium glass doors for modern elevator aesthetics and safety.",
+    "features": [
+      "Clear vision for modern cabin feel",
+      "Safety-oriented door design",
+      "Reliable opening/closing performance",
+      "Compatible with elevator door systems",
+      "Tempered glass for safety",
+      "Available in various tints and thicknesses"
+    ],
+    "specs": [
+      { "label": "Glass Type", "value": "Tempered/Laminated" },
+      { "label": "Thickness", "value": "8-12 mm" },
+      { "label": "Dimensions", "value": "Customizable" },
+      { "label": "Frame Material", "value": "Aluminum/Stainless Steel" },
+      { "label": "Hardware", "value": "Included" },
+      { "label": "Application", "value": "Elevator Cabin" }
+    ]
+  },
+  {
+    "id": "over-speed-governors",
+    "name": "Over Speed Governors",
+    "img": "/src/images/part3.png",
+    "description": "Advanced safety governors for elevator speed control.",
+    "features": [
+      "Safety governor for overspeed protection",
+      "Precision control for elevator operation",
+      "Designed for dependable emergency action",
+      "High-performance safety component",
+      "Mechanical speed sensing",
+      "Fail-safe design"
+    ],
+    "specs": [
+      { "label": "Type", "value": "Mechanical" },
+      { "label": "Speed Range", "value": "Up to 2.5 m/s" },
+      { "label": "Reset Mechanism", "value": "Manual/Automatic" },
+      { "label": "Mounting", "value": "Machine Room" },
+      { "label": "Standards Compliance", "value": "EN81, ASME A17.1" },
+      { "label": "Application", "value": "Elevator Safety System" }
+    ]
+  },
+  {
+    "id": "combination-brackets",
+    "name": "Combination Brackets",
+    "img": "/src/images/part4.png",
+    "description": "Durable brackets for elevator component mounting.",
+    "features": [
+      "Strong mounting for key components",
+      "Helps maintain component alignment",
+      "Suitable for repeated service operations",
+      "Built for mechanical stability",
+      "Easy to install and replace",
+      "Available in various sizes"
+    ],
+    "specs": [
+      { "label": "Material", "value": "Steel" },
+      { "label": "Load Capacity", "value": "Varies by size" },
+      { "label": "Finish", "value": "Powder Coated/Zinc Plated" },
+      { "label": "Mounting Holes", "value": "Pre-drilled" },
+      { "label": "Application", "value": "Component Mounting" },
+      { "label": "Compatibility", "value": "Various elevator models" }
+    ]
+  },
+  {
+    "id": "car-frames",
+    "name": "Car Frames",
+    "img": "/src/images/part5.png",
+    "description": "Sturdy car frames for elevator cabin construction.",
+    "features": [
+      "Structural frame support for elevator cabins",
+      "Stable geometry for consistent installation",
+      "Designed for durability and strength",
+      "Supports smooth cabin assembly",
+      "Precision engineered for alignment",
+      "Available in standard and custom sizes"
+    ],
+    "specs": [
+      { "label": "Material", "value": "Structural Steel" },
+      { "label": "Load Capacity", "value": "According to cabin size" },
+      { "label": "Finish", "value": "Primer/Painted" },
+      { "label": "Dimensions", "value": "Customizable" },
+      { "label": "Application", "value": "Elevator Cabin Structure" },
+      { "label": "Compliance", "value": "ISO 9001" }
+    ]
+  },
+  {
+    "id": "buffer-springs",
+    "name": "Buffer Springs",
+    "img": "/src/images/bufferspring.png",
+    "description": "High-performance buffer springs for elevator safety systems.",
+    "features": [
+      "Energy absorption for safety operation",
+      "Stable performance under load",
+      "Reliable safety component",
+      "Designed for elevator buffer system compatibility",
+      "Long service life",
+      "Consistent performance characteristics"
+    ],
+    "specs": [
+      { "label": "Type", "value": "Helical/Cone" },
+      { "label": "Load Capacity", "value": "As per elevator capacity" },
+      { "label": "Material", "value": "Spring Steel" },
+      { "label": "Diameter", "value": "Various sizes" },
+      { "label": "Stroke", "value": "As per design" },
+      { "label": "Application", "value": "Elevator Buffer System" }
+    ]
+  },
+  {
+    "id": "machine-bases",
+    "name": "Machine Bases",
+    "img": "/src/images/machinebase.png",
+    "description": "Robust machine bases for elevator motor installation.",
+    "features": [
+      "Stable support for elevator machinery",
+      "Helps reduce vibration for smooth operation",
+      "Designed for secure installation",
+      "Durable construction for long-term use",
+      "Precision machined for alignment",
+      "Available in various configurations"
+    ],
+    "specs": [
+      { "label": "Material", "value": "Cast Iron/Steel" },
+      { "label": "Load Capacity", "value": "According to motor weight" },
+      { "label": "Dimensions", "value": "Customizable" },
+      { "label": "Surface Finish", "value": "Machined/Painted" },
+      { "label": "Mounting", "value": "Bolting/Welding" },
+      { "label": "Application", "value": "Elevator Machine Room" }
+    ]
+  },
+  {
+    "id": "rope-thimbles",
+    "name": "Rope Thimbles",
+    "img": "/src/images/ropethimbles.png",
+    "description": "Precision rope thimbles for elevator hoisting systems.",
+    "features": [
+      "Precision component for hoisting systems",
+      "Reliable rope interface performance",
+      "Supports smooth lift operation",
+      "Built for durability and stability",
+      "Corrosion resistant",
+      "Easy to install"
+    ],
+    "specs": [
+      { "label": "Material", "value": "Steel/Stainless Steel" },
+      { "label": "Rope Diameter", "value": "Various sizes" },
+      { "label": "Inside Diameter", "value": "Matches rope size" },
+      { "label": "Outside Diameter", "value": "Standard sizes" },
+      { "label": "Breaking Strength", "value": "High" },
+      { "label": "Application", "value": "Elevator Hoisting System" }
+    ]
+  },
+  {
+    "id": "swing-doors",
+    "name": "Swing Doors",
+    "img": "/src/images/swingdoor.png",
+    "description": "Modern swing doors for elevator cabin access.",
+    "features": [
+      "Door system designed for stable operation",
+      "Supports smooth cabin entry and exit",
+      "Safety-focused door performance",
+      "Compatible with common elevator setups",
+      "Available in various finishes",
+      "Easy maintenance"
+    ],
+    "specs": [
+      { "label": "Door Type", "value": "Single/Duple Swing" },
+      { "label": "Material", "value": "Stainless Steel/Glass" },
+      { "label": "Dimensions", "value": "Customizable" },
+      { "label": "Hardware", "value": "Included" },
+      { "label": "Finish", "value": "Brushed/Polished" },
+      { "label": "Application", "value": "Elevator Cabin Access" }
+    ]
+  }
+]

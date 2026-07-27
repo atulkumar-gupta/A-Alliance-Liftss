@@ -1,0 +1,145 @@
+/* =========================================
+   TOPBAR
+========================================= */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a2b5e;
+  color: #ffffff;
+  padding: 10px 40px;
+  width: 100%;
+  min-height: 56px;
+  flex-shrink: 0;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.company-location {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.topbar-phone {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.topbar-phone:hover {
+  color: #f0e993;
+}
+
+.topbar-divider {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+  .topbar {
+    padding: 8px 20px;
+  }
+
+  .company-location,
+  .topbar-label,
+  .topbar-phone {
+    font-size: 12px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .topbar-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .company-location {
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .topbar-label {
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .topbar-phone {
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .topbar-divider {
+    display: none;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 6px 10px;
+  }
+
+  .company-location {
+    font-size: 10px;
+  }
+
+  .topbar-label {
+    font-size: 10px;
+  }
+
+  .topbar-phone {
+    font-size: 10px;
+  }
+}

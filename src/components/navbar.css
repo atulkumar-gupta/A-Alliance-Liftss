@@ -1,0 +1,458 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 20px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  min-height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  transition: box-shadow 0.2s ease;
+  transform: none !important;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 1;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.navbar-logo {
+  height: 75px;
+  width: 180px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 28px;
+  flex-shrink: 0;
+}
+
+.navbar-right--auth-pages {
+  gap: 4px;
+}
+
+/* Auth area — stable DOM layout */
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 130px;
+  justify-content: flex-end;
+}
+
+/* User icon */
+.user-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  text-decoration: none;
+  flex-shrink: 0;
+  color: #071f4d;
+  background: transparent;
+  transition: all 0.15s ease;
+}
+
+.user-icon-btn--active {
+  background: transparent;
+  color: #071f4d;
+  border-color: #cbd5e1;
+}
+
+.user-icon-btn--active:hover {
+  color: #1a56db;
+  border-color: #1a56db;
+}
+
+.user-icon-btn--ghost {
+  display: none;
+}
+
+/* User icon */
+.user-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  text-decoration: none;
+  flex-shrink: 0;
+  color: #071f4d;
+  background: transparent;
+  transition: all 0.15s ease;
+}
+
+.user-icon-btn--active {
+  background: transparent;
+  color: #071f4d;
+  border-color: #cbd5e1;
+}
+
+.user-icon-btn--active:hover {
+  color: #1a56db;
+  border-color: #1a56db;
+}
+
+.user-icon-btn--ghost {
+  display: none;
+}
+
+/* Consistent auth-area placeholder for stable layout while auth state is loading */
+.auth-icon-slot {
+  display: none;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.navbar-auth--loading .auth-icon-slot,
+.mobile-buttons--loading .auth-icon-slot {
+  display: block;
+}
+
+.auth-btn--skeleton {
+  min-width: 100px;
+  height: 42px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.7) 25%, rgba(226,232,240,0.7) 50%, rgba(255,255,255,0.7) 75%);
+  background-size: 200% 100%;
+  animation: auth-skeleton 1.6s infinite;
+  border: 1px solid #e2e8f0;
+  box-sizing: border-box;
+}
+
+.mobile-auth-skeleton {
+  flex: 1;
+  height: 42px;
+  min-width: auto;
+  width: auto;
+}
+
+.navbar-auth--loading .auth-btn--neutral {
+  display: none;
+}
+
+.mobile-auth-btn {
+  flex: 1;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 0;
+}
+
+.mobile-buttons--loading .auth-btn--skeleton {
+  display: inline-flex;
+}
+
+@keyframes auth-skeleton {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Auth button (Login + Logout share same base class) */
+.auth-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 28px;
+  min-width: 100px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+/* Neutral auth button — same visual always, only text changes (no blink on refresh) */
+.auth-btn--neutral {
+  background: #ffffff;
+  color: #071f4d;
+  border: 1.5px solid #cbd5e1;
+}
+
+.auth-btn--neutral:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* Nav links */
+.nav-link {
+  background: none;
+  border: none;
+  color: #13171f;
+  font-size: clamp(0.82rem, 1vw, 0.93rem);
+  font-weight: 600;
+  padding: 8px clamp(12px, 2vw, 22px);
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.2s, border-bottom-color 0.2s;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  text-decoration: none;
+  min-height: 36px;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  color: #1a56db;
+}
+
+.nav-link.active {
+  color: #1a56db;
+  border-bottom-color: #1a56db;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a.nav-link {
+  text-decoration: none;
+}
+
+/* Cart button — white bg, gray border, blue hover like nav links */
+.buy-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #13171f;
+  text-decoration: none;
+  position: relative;
+  border: 1.5px solid #cbd5e1;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: all 0.2s;
+}
+
+.buy-btn:hover {
+  background: transparent;
+  color: #1a56db;
+  border-color: #1a56db;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #e30707;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
+  z-index: 10002;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #13171f;
+  transition: all 0.3s ease;
+}
+
+.hamburger-line:first-child {
+  width: 100%;
+}
+
+.hamburger-line:last-child {
+  width: 70%;
+  align-self: flex-end;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-links {
+    display: flex;
+  }
+}
+
+.mobile-nav-link {
+  color: #13171f;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.mobile-nav-link:hover {
+  color: #1a56db;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .navbar {
+    overflow: visible;
+    justify-content: space-between;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    order: 3;
+    margin-right: 0;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar.scrolled {
+    top: 0;
+  }
+
+  .navbar.scrolled.hamburger-triggered {
+    top: 0;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 10001;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .mobile-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    align-items: center;
+  }
+
+  .mobile-auth-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .mobile-buttons .buy-btn,
+  .mobile-buttons .auth-btn {
+    flex: 1;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 0;
+  }
+}
